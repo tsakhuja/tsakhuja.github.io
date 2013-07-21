@@ -99,42 +99,40 @@ header, footer, aside, nav, article {
 }
 
 body {  
-  position:absolute;
-  margin: 0 auto;  
-  width: 100%;
   height: 1000px;
+  margin: 0 auto;  
+  position:absolute;
+  width: 100%;
 }
 
 h1 {
+  color: #413839; 
   font-family: "Cabin Sketch", serif; 
   font-size: 112px; 
   font-weight: normal;
-  text-shadow: 3px 3px 8px #aaa; 
-  color: #413839; 
+  /*text-shadow: 3px 3px 8px #aaa; */
 }
 
 h2 {
   font-family: "Courier", sans-serif; 
   font-size: 24px; 
-  text-shadow: 2px 2px 2px #aaa; 
+  /*text-shadow: 2px 2px 2px #aaa; */
 }
 
 
 p {
+ color: #413839; 
  font-family: "Century Gothic", sans-serif; 
  font-size: 14px; 
- /*text-shadow: 2px 2px 2px #aaa; 
-  */
- color: #413839; 
 }
 
 h3 {
+  color: #413839; 
+  float: left;
   font-family: "Cabin Sketch", serif; 
   font-size: 48px; 
   font-weight: normal;
-  text-shadow: 3px 3px 5px #aaa; 
-  color: #413839; 
-  float:left;
+  /*text-shadow: 3px 3px 5px #aaa; */
 }
 
 a:link {
@@ -143,8 +141,8 @@ a:link {
 }
 
 a:visited {
-  text-decoration: none;
   color:#A00000;
+  text-decoration: none;
 }
 
 a:active {
@@ -152,86 +150,85 @@ a:active {
 }
 
 a:hover {
-  text-decoration: none;color:#A000000;
+  text-decoration: none;
+  color: #A000000;
 }
 
 .popover .popover_triangle {
-  left:5px;
+  left: 5px;
 }
 
 .popover {
-  font-family: "Century Gothic", sans-serif; 
-  font-size: 16px; text-shadow: 2px 2px 2px #aaa;
+  -moz-border-radius: 4px;
+  -moz-transition: opacity 0.25s linear;
+  -webkit-border-radius: 4px;
+  -webkit-transition: opacity 0.25s linear;
+  background-color: white;
+  border-radius: 4px;
+  border-radius: 4px;
+  border: 3px solid #413839;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   color: black;
-  opacity: 0.9;
-  display:none;
-  left:0px;
-  width: 225px;
-  font-weight: normal;
-  vertical-align: baseline;
-  line-height: 1;
   cursor: auto;
+  display:none;
+  font-family: "Century Gothic", sans-serif; 
+  /*font-size: 16px; text-shadow: 2px 2px 2px #aaa;*/
+  font-weight: normal;
+  left:0px;
+  line-height: 1;
+  opacity: 0.9;
   position:absolute;
   top:217px;
-  background-color: white;
-  z-index:5000000;
-  border: 3px solid #413839;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  -webkit-transition: opacity 0.25s linear;
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  -moz-transition: opacity 0.25s linear;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   transition: opacity 0.25s linear; 
+  vertical-align: baseline;
+  width: 225px;
+  z-index:5000000;
 }
 
 .popover > .popover_triangle {
-  position: absolute;
-  top: 77px;
-  font-size: 0px;
-  line-height: 0%;
-  width: 0px;
-  border-top: 16px solid #413839;
+  border-bottom: 16px solid rgba(0,0,0,0); 
   border-left: 16px solid rgba(0,0,0,0);
   border-right: 16px solid rgba(0,0,0,0);
-  border-bottom: 16px solid rgba(0,0,0,0); 
+  border-top: 16px solid #413839;
+  font-size: 0px;
+  line-height: 0%;
+  position: absolute;
+  top: 77px;
+  width: 0px;
 }
 
 .popover > .header {
-  font-weight: bold;
-  margin: 0;
-  padding: 3px;
-  height: 225px;
-  line-height:25px;
-  text-shadow:rgba(0, 0, 0, 1) 0 -1px 0;
-  color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#413839), color-stop(0.2,#4138395, 0.35), color-stop(0.5, rgba(255, 255, 255, 0.1)), color-stop(0.5, transparent), to(transparent) );
   background: #222; /* old browsers */
   background: -moz-linear-gradient(top, #333 0%, #111 100%); /* firefox */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#413839), color-stop(0.2,#4138395, 0.35), color-stop(0.5, rgba(255, 255, 255, 0.1)), color-stop(0.5, transparent), to(transparent) );
+  color: white;
+  font-weight: bold;
+  height: 225px;
+  line-height: 25px;
+  margin: 0;
+  padding: 3px;
   text-align: center; 
+  text-shadow: rgba(0, 0, 0, 1) 0 -1px 0;
 }
 
 .popover > .content {
-  width: 225px;
-  height: 75px;
   background: #413839;
+  font-size: 16px;
+  height: 75px;
   overflow-x: hidden;
   overflow-y: auto;
-  font-size:16px;
+  width: 225px;
 }
 
 .popover > .content ul {
-  list-style:none;
-  margin:0;	
-  padding:0;
+  list-style: none;
+  margin: 0;	
+  padding: 0;
 }
 
 .popover > .content ul li {
-  line-height:25px;
   border-bottom:#ccc 1px solid;
+  line-height:25px;
 }
 
 .popover > .content ul li.item:hover {
